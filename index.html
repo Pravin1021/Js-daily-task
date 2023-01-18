@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIEW</title>
+</head>
+<body>
+    
+    <script>
+    //     let arr=[10,-1,2,4];
+    //     let temp;
+    //     for (i=0;i<arr.length;i++) {
+    //     for (j=i;j<arr.length;j++) {
+    //       if (arr[i] > arr[j]) {
+    //         temp = arr[i];
+    //         arr[i]=arr[j];
+    //         arr[j]=temp;
+    //       }
+    //     }
+    //     document.write(arr[i]);
+    //   }
+
+    let a=parseInt(prompt("Enter year1"))
+    let b=parseInt(prompt("Enter year2"))
+    let leapyear= [];
+    for (i=a;i<=b;i++) {
+      if ((i%4==0 && i%100!=0)||(i%100==0 && i%400==0)) {
+        leapyear.push(i);
+      }
+      }
+      console.log(leapyear)
+      
+    </script>
+</body>
+</html>
