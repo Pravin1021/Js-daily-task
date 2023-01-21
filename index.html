@@ -22,16 +22,95 @@
     //     document.write(arr[i]);
     //   }
 
-    let a=parseInt(prompt("Enter year1"))
-    let b=parseInt(prompt("Enter year2"))
-    let leapyear= [];
-    for (i=a;i<=b;i++) {
-      if ((i%4==0 && i%100!=0)||(i%100==0 && i%400==0)) {
-        leapyear.push(i);
-      }
-      }
-      console.log(leapyear)
-      
+    // let a=parseInt(prompt("Enter year1"))
+    // let b=parseInt(prompt("Enter year2"))
+    // let leapyear= [];
+    // for (i=a;i<=b;i++) {
+    //   if ((i%4==0 && i%100!=0)||(i%100==0 && i%400==0)) {
+    //     leapyear.push(i);
+    //   }
+    //   }
+    //   console.log(leapyear)
+
+    //Triangle Pattern
+    // let n = 5;
+    // for (i=1;i<=n;i++) {
+    // for (j=1;j<=n-i;j++) {
+    //   document.write("&nbsp");
+    // }
+    // for (k=0;k<2*i-1;k++) {
+    //   document.write("*");
+    // }
+    //   document.write("<br>");
+    // }
+
+    // let n=5;
+    // for (let i=1;i<=n;i++){
+    //         for(let j=1;j<=n-i;j++){
+    //             document.write("&nbsp");
+    //         }
+    //         for(let k=1;k<=i;k++){
+    //             document.write("*");
+    //         }
+    //         document.write("<br/>")
+    //     }
+        
+
+    // let a=parseInt(prompt("enter a number"))
+    // let b=0;
+    // let c=0;
+    // for(i=1;i<=a;i++){
+    //   if(i%2==0){
+    //     b+=i;
+    //   }
+    //   else{
+    //     c+=i;
+    //   }
+    // }
+    // document.write("even" + b)
+    // document.write("odd" + c)
+     
+    //adding two array
+    // let array1 = [1,0,2,3,4];
+    // let array2 = [3,5,6,7,8,13];
+    // let array3=[]
+    // for(i=0;i<(array1.length,array2.length);i++){
+    //     array3.push((array1[i] || 0)+ (array2[i] || 0))
+    // }  
+    // document.write(array3)
+
+     //getting index of target   
+    // let num=[10,20,40,50,60,70]
+    // let target=90
+    // function sum(arr,n){
+    // let output=[]
+    // for(i=0;i<arr.length;i++){
+    //     for(j=i;j<arr.length;j++){
+    //         if(arr[i]+arr[j]==n){
+    //             output.push(i,j)
+    //             return output
+    //         }
+    //     }
+    // }
+    // }
+    // document.write(sum(num,target))
+
+    let arr1=[1,2,20,4]
+    let arr2=[10,2,11,19]
+    function merge(arr1,arr2){
+        let empty=[]
+        let array=arr1.concat(arr2)
+        for(i=0;i<array.length;i++){
+            for(j=i;j<array.length;j++){
+                if(array[i]==array[j]){
+                    empty.push(array[j])
+                }
+            }
+        }
+    }
+    document.write(merge(arr1,arr2))
+
+
     </script>
 </body>
 </html>
